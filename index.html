@@ -25,7 +25,7 @@
                                 <nav>
                                     <ul class="nav-list">
                                         <li class="item">
-                                            <a class="link header-link" href="">Студия</a>
+                                            <a class="link header-link underline" href="">Студия</a>
                                         </li>
                                         <li class="item">
                                             <a class="link header-link" href="./portfolio.html">Портфолио</a>
@@ -68,11 +68,23 @@
                     <div class="hero-overley">
                         <div class="container">
                             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                            <button class="order-hover order" type="button">Заказать услугу</button>
+                            <button data-modal-open class="order-hover order" type="button">Заказать услугу</button>
+                            
+                            <div class="backdrop is-hidden" data-modal>
+                                <div class="modal">
+                                    <button data-modal-close class="close">
+                                        <svg class="twittr">
+                                            <use href="./img/svg/1 symbol-defs.svg#icon-twitter"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
+            
+            
             
             <!-- наши достоинста -->
             <section>
@@ -137,13 +149,30 @@
                         <h2 class="headline">Чем мы занимаемся</h2>
                         <ul class="programing">
                             <li class="item">
-                                <img src="./img/img.studio/pc.jpeg" alt="адаптация под пк" width="370">
+                                <img class="img" src="./img/img.studio/pc.jpeg" 
+                                     alt="адаптация под пк" 
+                                     width="370">
+                                
+                                <div class="programing-discription-bg">
+                                    <p class="programing-discription">десктопные приложения</p>
+                                </div>
+                                
                             </li>
                             <li class="item">
-                                <img src="./img/img.studio/mobile.jpeg" alt="адаптация под мобильный телефон" width="370">
+                                <img src="./img/img.studio/mobile.jpeg" 
+                                     alt="адаптация под мобильный телефон" 
+                                     width="370">
+                                     <div class="programing-discription-bg">
+                                        <p class="programing-discription">мобильные приложения</p>
+                                     </div>
                             </li>
                             <li class="item">
-                                <img src="./img/img.studio/tablet.jpeg" alt="адаптация под планшет" width="370">
+                                <img src="./img/img.studio/tablet.jpeg" 
+                                     alt="адаптация под планшет" 
+                                     width="370">
+                                     <div class="programing-discription-bg">
+                                         <p class="programing-discription">Дизайнерские решения</p>
+                                     </div> 
                             </li>
                         </ul>
                     </div>
@@ -435,5 +464,6 @@
                         
                 </div>
             </footer>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
