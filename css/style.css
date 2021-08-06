@@ -458,26 +458,32 @@ img {
 .first-icon {
   width: 41px;
   height: 47px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .second-icon {
   width: 40px;
   height: 52px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .third-icon {
   width: 44px;
   height: 41px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .fourth-icon {
   width: 85px;
   height: 41px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .fifth-icon {
   width: 63px;
   height: 45px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .sixth-icon {
   width: 94px;
   height: 44px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-border:hover,
 .clients-border:focus {
